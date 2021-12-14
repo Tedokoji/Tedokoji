@@ -1,0 +1,24 @@
+.navbar{
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    width: 100vw;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.466);
+    justify-content: center;
+    & input{
+        margin-top: 4px;
+        height: 15px;
+    }
+    & img{
+        margin-top: 5px;
+        margin-right: 10px;
+        cursor: pointer;
+        height: 20px;
+    }
+    & #instalogo{
+        margin-top: 5px;
+        margin-right: 80px;
+        cursor: pointer;
+    }
+}

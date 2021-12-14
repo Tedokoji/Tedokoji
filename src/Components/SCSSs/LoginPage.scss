@@ -1,0 +1,85 @@
+.hello{
+    
+    position: relative;
+    
+}
+.wrongass{
+    border: 2px solid red;
+}
+
+.login-page{
+    z-index: 10;
+    width:100vw;
+    height:100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    & #logindec{
+        transform: scale(0.9)
+    }
+    & .whatever{
+        transform: scale(0.79)
+
+    }
+    & .form{
+        margin-top: 80px;
+        width:200px;
+        height:400px;
+        display: flex;
+        flex-direction: column;
+        background-color:rgb(255, 255, 255);
+        border: 1px solid rgba(0, 0, 0, 0.479);
+        
+        & #loginbutton{
+            background-color: rgb(1, 105, 202);
+            width: 50px;
+            height: 20px;
+            color: white;
+            margin-left:80px;
+            margin-top:10px;
+            cursor:pointer
+        }
+        & #logo{
+           transform: scale(0.5)
+        }
+        & h5{
+            margin:0;
+            font-weight:650;
+            opacity: 0.5;
+            text-align: center
+        }
+        & input{
+            margin-top:5px;
+            margin-left:7px;
+            width:90%;
+        }
+        & #facebook{
+            width: 150px;
+            height: 20px;
+            margin-left: 30px;
+            background-color: rgb(73, 161, 243);
+            border-radius: 3px;
+            display: flex;
+            cursor: pointer;
+            & img{
+                width: 20px;
+                height: 20px;
+            }
+            & p{
+                margin:0;
+                color:white;
+                font-size: 12px;
+                font-weight: 500;
+            }
+           
+        }
+    }
+}
+  .regis{
+margin-left:80px;
+ cursor:pointer;
+ &:hover{
+     color: blue;
+ }
+
+}
