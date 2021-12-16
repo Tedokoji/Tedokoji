@@ -1,3 +1,18 @@
 .new-feed-container{
+  width: 100vw;
+ 
+  margin-top:50px;
   
+  display: flex;
+  & .main-feed{
+    width: 380px;
+    margin-left: 250px;
+  
+  }
+  & .left-feed{
+    width: 180px;
+    border: 2px solid black;
+    height: 250px;
+    margin-left: 5px;
+  }
 }

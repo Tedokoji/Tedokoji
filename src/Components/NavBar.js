@@ -1,7 +1,6 @@
-import {useState,useRef,useEffect} from 'react'
+import {useState} from 'react'
 import './SCSSs/navbar.scss'
-import Inbox from './Inbox'
-import {Routes,Route,Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import home from './staticfiles/home.png'
 import unselectedhome from './staticfiles/unselectedhome.png'
 import inbox from './staticfiles/inbox.png'
@@ -12,7 +11,7 @@ import unselectedcompass from './staticfiles/unselectedcompass.png'
 import fav from './staticfiles/fav.png'
 import unselectedfav from './staticfiles/unselectedfav.png'
 import instalogo from './staticfiles/instalogo.png'
-function NavBar(props) {
+function NavBar() {
     const [active, setActive] =useState('home')
     console.log('rerender nav')
     return (
@@ -49,9 +48,7 @@ function NavBar(props) {
             src={active === 'fav' ? unselectedfav : fav } />
             </Link>
             </div>
-            <Routes>
-             <Route path="/inbox" element={<Inbox/>}/>
-            </Routes>
+            
         </div>
     )
 }
