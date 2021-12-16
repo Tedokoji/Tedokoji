@@ -1,13 +1,12 @@
 import './SCSSs/Feed.scss'
-import naoavt from './staticfiles/Naoavt.png'
-import evange from './staticfiles/logo.png'
+import {memo} from'react'
 import fav from './staticfiles/fav.png'
 import flasg from './staticfiles/flasg.png'
 import inbox from './staticfiles/inbox.png'
 import commnets from './staticfiles/commnets.png'
 import asmile from './staticfiles/asmile.png'
 import Slider from "react-slick";
-function Feed(props) {
+function Feed({avt,avtname,images,likes}) {
     const settings = {
         dots: false,
         infinite: true,
@@ -15,26 +14,27 @@ function Feed(props) {
         slidesToShow: 1,
         slidesToScroll: 1,
       };
+    
     return (
         <div className="feeding">
         <div className="topone">
             <div className="toponediv">
-                <img src={naoavt} className='avt'/>
-                <p>{props.name}nao</p>
+                <img src={avt} className='avt'/>
+                <p>{avtname}</p>
                 <div><h5>. . .</h5></div>
            </div>
-
+        {console.log('images')}
         </div>
         <div className="bodyone">
            <Slider {...settings} className="slider">
+            {
+                images.map(img =>{
+                    return (
+                        <img key={img.id} src={img.src}/>
+                    )
+                })
+            }
             
-             <img src={evange} className='avt'/>
-            
-            
-             <img src={naoavt} className='avt'/>
-            
-           
-             <img src={evange} className='avt'/>
             
            </Slider>
         </div>
@@ -49,8 +49,8 @@ function Feed(props) {
                     <img src={flasg}/>
             </div>
             <div className="likesandcomments">
-                <p className="likes">8,123 likes</p>
-                <p className="nameacc">Nao Yorihime</p>
+                <p className="likes">{likes}</p>
+                <p className="nameacc">{avtname}</p>
                 <p className="nameacc">Tedokoji kagami</p>
             </div>
             <div className="Comment">
@@ -63,4 +63,4 @@ function Feed(props) {
     )
 }
 
-export default Feed
+export default memo(Feed)

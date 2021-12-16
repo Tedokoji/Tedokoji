@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState,memo} from 'react'
 import './SCSSs/navbar.scss'
 import {Link} from 'react-router-dom'
 import home from './staticfiles/home.png'
@@ -53,4 +53,4 @@ function NavBar() {
     )
 }
 
-export default NavBar
+export default memo(NavBar)
