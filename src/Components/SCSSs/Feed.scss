@@ -7,7 +7,8 @@
          display: flex;
          flex-direction: row;
         z-index: 1;
-        position: relative;
+            padding-left: 5px; 
+            position: relative;
          & h5{
              position: absolute;
              top: 0;
@@ -17,10 +18,9 @@
              transform: scale(0.8);
              cursor: pointer;
          }
-         & .avt{
-            border-radius:360px;
-            height: 23px;
-            padding-left: 10px; 
+         & img{          
+            border-radius:50%;            
+            height: 20px;
               &:hover{
                 cursor: pointer;
             }
@@ -40,7 +40,7 @@
    
 }
 .bodyone{
-    width: 370px;
+    width: 378px;
     height: 250px;
     & img{
         width: 30px;
