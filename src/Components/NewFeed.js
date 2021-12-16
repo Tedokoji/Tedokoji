@@ -19,7 +19,7 @@ function NewFeed() {
       <div className="new-feed-container">
           <div className="main-feed">
             
-            <Feed avt={naoavt}
+            <Feed avt={naoavt} likes={123}
              images={[{src: naoavt,id: 1},
             {src: evange,id: 2}]}
             avtname={'Nao Yorihime'}
@@ -30,7 +30,7 @@ function NewFeed() {
               feed.map(
                 e=>{
                   return(
-                    <Feed avt={e.avt}
+                    <Feed likes={e.likes} key={e.id} avt={e.avt}
                     images={e.images}
                    avtname={e.avtname}
                    

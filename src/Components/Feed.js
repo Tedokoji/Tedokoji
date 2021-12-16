@@ -49,7 +49,7 @@ function Feed({avt,avtname,images,likes}) {
                     <img src={flasg}/>
             </div>
             <div className="likesandcomments">
-                <p className="likes">{likes}</p>
+                <p className="likes">{likes} likes</p>
                 <p className="nameacc">{avtname}</p>
                 <p className="nameacc">Tedokoji kagami</p>
             </div>
