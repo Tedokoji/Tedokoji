@@ -1,0 +1,37 @@
+{
+  "logininfo": [
+    {
+      "name": "admin",
+      "password": "admin",
+      "id": 1
+    },
+    {
+      "name": "",
+      "password": "",
+      "id": 2
+    },
+    {
+      "name": "admin",
+      "password": "asmin",
+      "id": 3
+    },
+    {
+      "name": "tedo",
+      "password": "tedo",
+      "id": 4
+    },
+    {
+      "name": "ohayo",
+      "password": "ohayo",
+      "id": 5
+    }
+  ],
+  "newfeed": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    }
+  ]
+}
