@@ -1,5 +1,4 @@
 import inbox from './staticfiles/inox pic.png'
-import React from 'react'
 function Inbox() {
     const active = 'inbox'
     return (

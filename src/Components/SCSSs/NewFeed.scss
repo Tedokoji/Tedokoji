@@ -6,13 +6,62 @@
   display: flex;
   & .main-feed{
     width: 380px;
-    margin-left: 250px;
+    margin-left: 25%;
   
   }
   & .right-feed{
     width: 180px;
-    border: 2px solid black;
+    & .sugg{
+      display: flex;
+
+      & .suggtext{
+        margin: 0;
+        margin-left: 10px;
+        opacity: 0.7;
+        font-size: 9px;
+      font-weight: 500;
+      }
+      & .seeall{
+        margin: 0;
+        margin-left:50px;
+        font-size: 9px;
+        cursor:pointer;
+        font-weight: 500;
+      }
+    }
     height: 250px;
     margin-left: 5px;
+    & .self{
+      & .swtich{
+        margin:20px 0 0 30px;
+        color: rgb(46, 172, 255);
+        font-size: 10px;
+        font-weight: 500;
+        cursor:pointer;
+      }
+      display: flex;
+      & .nameanddetail{
+        & h5{
+          margin:15px 0 0 0;
+          font-size: 10px;
+        cursor:pointer;
+        font-weight: 500;
+        }
+        & p{
+          margin:0;
+          font-size: 8px;
+          font-weight: 400;
+          opacity: 0.8  ;
+        }
+      }
+      & #selfimg{          
+        border-radius:50%;            
+        height: 30px;
+        margin:10px;
+          &:hover{
+            cursor: pointer;
+        }
+    }
+    }
   }
 }

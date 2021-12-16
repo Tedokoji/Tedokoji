@@ -43,7 +43,45 @@ function NewFeed() {
             
           </div>
           <div className="right-feed">
+            <div className="self">
+              <img id='selfimg' src={naoavt}/>
+              <div className="nameanddetail">
+                <h5>Nao Yorihime</h5>
+                <p>Dung Huynh</p>
+              </div>
+              <h5 className="swtich">Switch</h5>
+            </div>
+            <div className="sugg">
+              <h5 className="suggtext">Suggestions For You</h5>
+              <h5 className="seeall">See All</h5>
+            </div>
+            <div className="sugglist">
+            <div className="self">
+              <img id='selfimg' src={naoavt}/>
+              <div className="nameanddetail">
+                <h5>Nao Yorihime</h5>
+                <p>Dung Huynh</p>
+              </div>
+              <h5 className="swtich">Follow</h5>
+            </div>
+            <div className="self">
+              <img id='selfimg' src={naoavt}/>
+              <div className="nameanddetail">
+                <h5>Nao Yorihime</h5>
+                <p>Dung Huynh</p>
+              </div>
+              <h5 className="swtich">Follow</h5>
+            </div>
+            <div className="self">
+              <img id='selfimg' src={naoavt}/>
+              <div className="nameanddetail">
+                <h5>Nao Yorihime</h5>
+                <p>Dung Huynh</p>
+              </div>
+              <h5 className="swtich">Follow</h5>
+            </div>
             
+            </div>
           </div>
 
       </div>
