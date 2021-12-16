@@ -1,12 +1,15 @@
 import './SCSSs/Feed.scss'
-import {memo} from'react'
+import {memo,useState} from'react'
 import fav from './staticfiles/fav.png'
 import flasg from './staticfiles/flasg.png'
 import inbox from './staticfiles/inbox.png'
 import commnets from './staticfiles/commnets.png'
 import asmile from './staticfiles/asmile.png'
 import Slider from "react-slick";
+import redheart from './staticfiles/heart.png'
+
 function Feed({avt,avtname,images,likes}) {
+   const [heart,setHeart] = useState(false)
     const settings = {
         dots: false,
         infinite: true,
@@ -41,7 +44,7 @@ function Feed({avt,avtname,images,likes}) {
         <div className="bottomone">
             <div className="bottomicons">
                 <div className="icons">
-                  <img src={fav}/>
+                  <img onClick={e=>{setHeart(!heart)}} src={heart === true ? redheart : fav}/>
                   <img src={commnets}/>
                    <img src={inbox}/>
                  
@@ -49,7 +52,7 @@ function Feed({avt,avtname,images,likes}) {
                     <img src={flasg}/>
             </div>
             <div className="likesandcomments">
-                <p className="likes">{likes} likes</p>
+                <p  className="likes">{likes} likes</p>
                 <p className="nameacc">{avtname}</p>
                 <p className="nameacc">Tedokoji kagami</p>
             </div>

@@ -11,6 +11,7 @@ function NewFeed() {
    .then(e=>{setFeed(e)})
    
  }
+ 
   useLayoutEffect(()=>{
     GET()
   },[])
@@ -19,9 +20,9 @@ function NewFeed() {
       <div className="new-feed-container">
           <div className="main-feed">
             
-            <Feed avt={naoavt} likes={123}
-             images={[{src: naoavt,id: 1},
-            {src: evange,id: 2}]}
+            <Feed avt={naoavt} likes={123} 
+             images={[{src: naoavt,id: 1}, 
+            {src: evange,id: 2}]} heart={'true'}
             avtname={'Nao Yorihime'}
             
             
@@ -30,7 +31,8 @@ function NewFeed() {
               feed.map(
                 e=>{
                   return(
-                    <Feed likes={e.likes} key={e.id} avt={e.avt}
+                     <Feed 
+                    likes={e.likes} key={e.id} avt={e.avt} 
                     images={e.images}
                    avtname={e.avtname}
                    
