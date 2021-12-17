@@ -1,4 +1,5 @@
 import inbox from './staticfiles/inox pic.png'
+import './SCSSs/Post.scss'
 function Inbox() {
     const active = 'inbox'
     return (

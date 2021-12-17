@@ -32,7 +32,7 @@ function NavBar() {
             onClick={e=>setActive('inbox')}
             src={active === 'inbox' ? unselectedinbox : inbox } />
             </Link>
-            <Link to="/post">
+            <Link to="/newfeed/post">
             <img  
             onClick={e=>setActive('post')}
             src={active === 'post' ? post : post } />
