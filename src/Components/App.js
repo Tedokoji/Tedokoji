@@ -5,6 +5,7 @@ import NavBar from './NavBar'
 import LoginPage from './LoginPage'
 import Inbox from './Inbox';
 import Post from './Post';
+import Postpre from './Postpre';
 function App() {
  
   return (<>
@@ -15,7 +16,9 @@ function App() {
      <Route path="/newfeed/*" element={<><NavBar/><NewFeed 
       /></>}/>
      <Route path="/inbox/*" element={<><NavBar/><Inbox/></>}/>
-     <Route path="/newfeed/post" element={<><Post/><NavBar/><NewFeed/></>}/>
+     <Route path="/newfeed/post/*" element={<><Post/><NavBar/><NewFeed/></>}/>
+     <Route path="/newfeed/post/previewing" 
+     element={<><Postpre/><NavBar/><NewFeed/></>}/>
      <Route path="/compass/*" element={<><NavBar/><NewFeed/></>}/>
      <Route path="/fav/*" element={<><NavBar/><NewFeed/></>}/>
    </Routes>
