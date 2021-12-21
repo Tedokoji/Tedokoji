@@ -1,0 +1,77 @@
+{
+  "logininfo": [
+    {
+      "name": "admin",
+      "password": "admin",
+      "id": 1
+    },
+    {
+      "name": "",
+      "password": "",
+      "id": 2
+    },
+    {
+      "name": "admin",
+      "password": "asmin",
+      "id": 3
+    },
+    {
+      "name": "tedo",
+      "password": "tedo",
+      "id": 4
+    },
+    {
+      "name": "ohayo",
+      "password": "ohayo",
+      "id": 5
+    },
+    {
+      "name": "sup",
+      "password": "sd",
+      "id": 6
+    },
+    {
+      "name": "werw",
+      "password": "rwer",
+      "id": 7
+    }
+  ],
+  "newfeed": [
+    {
+      "id": 1,
+      "likes": 69,
+      "avt": "https://i.pinimg.com/474x/bb/27/4e/bb274e662df151cb552ba2476a1b0f06.jpg",
+      "avtname": "Tedokojikagami",
+      "images": [
+        {
+          "id": 1,
+          "src": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3925efb9-68c4-4f09-a69f-ea85117d53e5/d6y6jbc-979c5cbc-8464-4ef7-98f9-016cbe33108d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM5MjVlZmI5LTY4YzQtNGYwOS1hNjlmLWVhODUxMTdkNTNlNVwvZDZ5NmpiYy05NzljNWNiYy04NDY0LTRlZjctOThmOS0wMTZjYmUzMzEwOGQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.3mySGH9sZ0Hwxyijz_yi72baU0ZD2oiJi7gDxEElRmY"
+        },
+        {
+          "id": 2,
+          "src": "https://c.wallhere.com/photos/4a/33/Yosuga_no_Sora_Kasugano_Sora_Kasugano_Haruka_Amatsume_Akira-11428.jpg!d"
+        },
+        {
+          "id": 3,
+          "src":"https://c.wallhere.com/photos/2e/12/Yosuga_no_Sora_Kasugano_Sora_Kasugano_Haruka-11381.jpg!d"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "likes": 69,
+      "avt": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQT1DfYW2GIzPhX7INRjJ2WLQvprvpJrtrmg&usqp=CAU",
+      "avtname": "Sora Kasugano",
+      "images": [
+        {
+          "id": 1,
+          "src": "https://c.wallhere.com/photos/94/0d/Yosuga_no_Sora_Kasugano_Sora_Kasugano_Haruka-11404.jpg!d"
+        },
+        {
+          "id": 2,
+          "src": "https://c.wallhere.com/photos/92/7b/yosuga_no_sora_kasugano_sora_kasugano_haruka_boy_girl_headphones_smile-711705.jpg!d"
+        }
+      ]
+    }
+  ]
+}

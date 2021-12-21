@@ -3,11 +3,13 @@ import {memo,useState,useLayoutEffect} from 'react'
 import evange from './staticfiles/logo.png'
 import naoavt from './staticfiles/Naoavt.png'
 import Feed from './Feed'
+import axios from 'axios'
 function NewFeed() {
   const [feed,setFeed] = useState([])
  function GET(){
-   fetch('http://localhost:3000/newfeed')
-   .then(res => {return res.json()})
+   axios.get('db.json')
+   .then(res => {return res.data})
+   .then(res => {return res.newfeed})
    .then(e=>{setFeed(e)})
    
  }
@@ -15,6 +17,7 @@ function NewFeed() {
   useLayoutEffect(()=>{
     GET()
   },[])
+  console.log(feed)
     return (
     
       <div className="new-feed-container">

@@ -4,6 +4,7 @@ import './SCSSs/LoginPage.scss'
 import logo from './staticfiles/instalogo.png'
 import logindec from './staticfiles/logindec.png'
 import facebookicon from './staticfiles/facebook.png'
+import axios from 'axios'
 function LoginPage() {
     const [name,setName] = useState('')
     const [pass,setPass] = useState('')
@@ -11,8 +12,9 @@ function LoginPage() {
     console.log('rerender login')
     const loginbutt = useRef()
     function GET(callback){
-     fetch('http://localhost:3000/logininfo')
-     .then(res=>res.json())
+     axios.get('db.json')
+     .then(res=>{return res.data})
+     .then(res=> {return res.logininfo})
      .then(callback)
     }
     const navi = useNavigate()
@@ -41,15 +43,15 @@ function LoginPage() {
        })
     }
     function POST(dataFORM){
-        fetch('http://localhost:3000/logininfo',{
-            method: 'POST',
-            body:JSON.stringify(dataFORM),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        })
-        .then(res=>res.json())
-        
+        // axios.post('db.json',{
+        //     method: 'POST',
+        //     headers: { 'Content-Type' : 'application/json',
+        //     'Accept': 'application/json'},
+        //     body: JSON.stringify(dataFORM)
+        // })
+        // .then(res => {return res.json()})
+          
+               
     }
     return (
         <>
